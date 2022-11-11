@@ -1,1 +1,27 @@
-{}
+{
+  "courses": [
+    {
+      "createdAt": "2022-11-10T21:57:04.348Z",
+      "name": "dsadsadsa",
+      "id": 1
+    }
+  ],
+  "students": [],
+  "enrolls": [],
+  "classworks": [
+    {
+      "createdAt": "2022-11-10T21:57:04.348Z",
+      "name": "dsadsadsa",
+      "id": "76f420a5-7071-4635-bde9-d6a7652b1bb4"
+    },
+    {
+      "createdAt": "2022-11-10T21:57:04.348Z",
+      "name": "dsadsadsa",
+      "id": "530f65cf-c546-4935-8fdf-705116802a4a"
+    },
+    {
+      "id": 13,
+      "name": "edgard"
+    }
+  ]
+}

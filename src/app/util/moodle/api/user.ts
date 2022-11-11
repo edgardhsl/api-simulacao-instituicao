@@ -1,4 +1,4 @@
-import { Api } from "app/http/api";
+import { Api } from "@app/http/api";
 import { Student, StudentResponse } from "app/models/student";
 
 export class User {

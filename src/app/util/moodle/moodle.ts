@@ -9,9 +9,9 @@ export namespace Moodle {
 
     const _moodle = init();
 
-    export const course = new CourseApi(_moodle);
+    export const course = new CourseApi();
     export const user = new UserApi(_moodle);
-    export const classwork = new ClassworkApi(_moodle);
+    export const classwork = new ClassworkApi();
     
     export async function init(auth?: Authorize) {
         if (auth !== undefined) {

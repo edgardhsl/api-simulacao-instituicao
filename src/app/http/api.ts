@@ -1,13 +1,9 @@
-import { Axios } from "axios";
+import axios, { Axios, AxiosRequestConfig } from "axios";
 
-export class Api {
-
-    private axios: Axios = new Axios({ baseURL: 'http://localhost:3000/' });
-
-    get get() { return this.axios.get };
-    get post() { return this.axios.post };
-    get put() { return this.axios.put };
-    get delete() { return this.axios.delete };
-    get patch() { return this.axios.patch };
-
+export class Api extends Axios {
+    constructor(config?: AxiosRequestConfig) {
+        super(config);
+        const instance = axios.create({baseURL: 'http://localhost:3000/sync/'});
+        return instance;
+    }
 }

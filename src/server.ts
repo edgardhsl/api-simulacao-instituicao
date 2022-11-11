@@ -15,29 +15,32 @@ export class SchoolAPIServer extends Server {
         super();
 
         const router = JsonServer.router('db.json');
+        const server = JsonServer.create();
         const middlewares = JsonServer.defaults();
 
+        this.app.use(server)
         this.app.use(middlewares)
-        this.app.use(router)
+        this.app.use('/sync', router)
         this.app.use(express.json());
         this.app.use(express.urlencoded({ extended: true }));
         super.addControllers([new CourseController()]);
         
-        //this.runConsumers();
+        this.runConsumers();
     }
 
     public start(port: number) {
         this.app.listen(port, () => console.log('Server listening on port: ' + port))
     }
 
-    public runConsumers() {
+    public async runConsumers() {
         const kafkaConsumer = new KafkaConsumer();
-        kafkaConsumer.addConsumer({ topics: ['moodle-course'] }, { eachMessage: (p) => this._syncMessage(p, CourseConsumer.sync) });
-        kafkaConsumer.addConsumer({ topics: ['moodle-student'] }, { eachMessage: (p) => this._syncMessage(p, StudentConsumer.sync) });
-        kafkaConsumer.addConsumer({ topics: ['moodle-classwork'] }, { eachMessage: (p) => this._syncMessage(p, ClassworkConsumer.sync) });
+        await kafkaConsumer.addConsumer({ topics: ['moodle-course'] }, { eachMessage: (p) => this._syncMessage(p, CourseConsumer.sync) });
+        await kafkaConsumer.addConsumer({ topics: ['moodle-student'] }, { eachMessage: (p) => this._syncMessage(p, StudentConsumer.sync) });
+        await kafkaConsumer.addConsumer({ topics: ['moodle-classwork'] }, { eachMessage: (p) => this._syncMessage(p, ClassworkConsumer.sync) });
     }
 
     private async _syncMessage(payload: EachMessagePayload, consumer: Function) {
+        console.log(payload.message.value);
         if (!payload.message.value) return;
         
         return consumer(toJSON(payload.message.value));

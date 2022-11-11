@@ -3,9 +3,11 @@ import { Moodle } from '../util/moodle';
 
 export class ClassworkConsumer {
 
-    static async sync(user: Classwork) {
-        const response = await Moodle.classwork.create(user);
-        return response;
+    static async sync(classwork: Classwork) {        
+        if(!classwork.id) 
+            return await Moodle.classwork.create(classwork);
+            
+        return await Moodle.classwork.update(classwork);
     }
 
 }

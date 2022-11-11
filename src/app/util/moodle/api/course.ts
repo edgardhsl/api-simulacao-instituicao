@@ -1,25 +1,34 @@
-import { CourseResponse } from "app/models/course";
+import { Api } from "@app/http/api";
+import { Course as Course2 } from "app/models/course";
 
 export class Course {
 
-    private moodle: any;
+    private api: Api = new Api();
     
-    constructor(moodle: any) {
-        this.moodle = moodle;
-    }
+    constructor() { }
 
-    public async create(course: any): Promise<CourseResponse> {
+    public async create(course: any): Promise<Course2> {
         try {
-            return this.moodle.call({ wsfunction: 'core_course_create_courses', args: [course] });
+            return await this.api.post('courses', course).then(resp => resp.data);
         } catch (ex) {
             console.log(ex);
             throw { code: -1, message: 'Não foi possível criar o curso' };
         }
     }
 
+    public async update(course: any): Promise<Course2> {
+        try {
+            console.log("teste");
+            return await this.api.put(`courses/${course.id}`, course).then(resp => resp.data);
+        } catch (ex) {
+            console.log(ex);
+            throw { code: -1, message: 'Não foi possível atualizar o curso' };
+        }
+    }
+
     public async get(courseId: string) {
         try {
-            return this.moodle.call({ wsfunction: 'core_course_get_courses', args: { options: { ids: [courseId] } } });
+            return await this.api.get(`courses/${courseId}`).then(resp => resp.data);
         } catch (ex) {
             console.log(ex);
             return { code: -1, message: 'Não foi possível retornar o curso com o id indicado.' };
@@ -28,7 +37,7 @@ export class Course {
 
     public async list() {
         try {
-            return this.moodle.call({ wsfunction: 'core_course_get_courses' });
+            return await this.api.get(`courses`).then(resp => resp.data);
         } catch (ex) {
             console.log(ex);
             return { code: -1, message: 'Não foi possível retornar a lista de cursos.' };
@@ -37,7 +46,7 @@ export class Course {
 
     public async getStudents(courseId: string) {
         try {
-            return this.moodle.call({ wsfunction: 'core_enrol_get_enrolled_users', args: { courseid: courseId } });
+            return await this.api.get(`courses/${courseId}/`).then(resp => resp.data?.students);
         } catch (ex) {
             console.log(ex);
             return { code: -1, message: 'Não foi possível retornar a lista de estudantes.' };
@@ -46,7 +55,7 @@ export class Course {
 
     public async getForums(courseId: string) {
         try {
-            return this.moodle.call({ wsfunction: 'mod_forum_get_forums_by_courses', args: { courseids: [courseId] } });
+            return await this.api.get(`courses/${courseId}`).then(resp => resp.data?.messages);
         } catch (ex) {
             console.log(ex);
             return { code: -1, message: 'Não foi possível retornar a lista de fóruns.' };

@@ -15,9 +15,7 @@ export class KafkaConsumer {
 
         this.kafka = new Kafka({
             clientId: 'my-app',
-            brokers: [
-                '35.224.210.161:9092'
-            ],
+            brokers: this._getBrokers,
         });
     }
 
@@ -30,7 +28,7 @@ export class KafkaConsumer {
 
     async addConsumer(topic: ConsumerSubscribeTopics, config: ConsumerRunConfig) {
         console.log(`[${(new Date().toLocaleString('pt-BR', { hour12: false }))}] Adding consumer for topic: ${topic.topics.join(', ')}`);
-        const consumer = this.kafka.consumer({ groupId: 'moodle-consumer' });
+        const consumer = this.kafka.consumer({ groupId: `moodle-consumer-${this.consumers.length+1}` });
         await consumer.connect();
         await consumer.subscribe(topic);
         await consumer.run(config);

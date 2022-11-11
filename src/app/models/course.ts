@@ -2,7 +2,8 @@ export interface Course {
     fullname: string,
     shortname: string,
     categoryid: number,
-    idnumber: string
+    idnumber: string,
+    id: number;
 }
 
 export interface CourseResponse {
