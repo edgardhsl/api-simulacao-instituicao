@@ -9,7 +9,6 @@ export class Classwork {
 
     public async create(classwork: any): Promise<Claswork2> {
         try {
-            console.log("teste");
             return await this.api.post('classworks', classwork).then(resp => resp.data);
         } catch (ex) {
             console.log(ex);

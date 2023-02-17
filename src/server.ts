@@ -8,6 +8,8 @@ import { CourseController } from "./app/controllers/courses.controller";
 import { KafkaConsumer } from "./app/util/kafka/kafka.consumer";
 import { toJSON } from "./app/util/kafka/kafka.message";
 import * as JsonServer from 'json-server';
+import * as fs from 'fs';
+import { KafkaLMSSync, Platform } from "@app/util/kafka/kafka-lms.sync";
 
 export class SchoolAPIServer extends Server {
 
@@ -24,7 +26,8 @@ export class SchoolAPIServer extends Server {
         this.app.use(express.json());
         this.app.use(express.urlencoded({ extended: true }));
         super.addControllers([new CourseController()]);
-        
+
+        this.runListeners();
         this.runConsumers();
     }
 
@@ -32,17 +35,26 @@ export class SchoolAPIServer extends Server {
         this.app.listen(port, () => console.log('Server listening on port: ' + port))
     }
 
+    public async runListeners() {
+        const dbDir = __dirname + '/../db.json';
+        const syncronizer = new KafkaLMSSync(Platform.Moodle);
+        fs.watchFile(dbDir, async (curr, prev) => {
+            console.log(`[${new Date().toLocaleString()}] Novas alterações do bd`);
+            syncronizer.send(await fs.readFileSync(dbDir).toString());
+        });
+    }
+
     public async runConsumers() {
         const kafkaConsumer = new KafkaConsumer();
-        await kafkaConsumer.addConsumer({ topics: ['moodle-course'] }, { eachMessage: (p) => this._syncMessage(p, CourseConsumer.sync) });
-        await kafkaConsumer.addConsumer({ topics: ['moodle-student'] }, { eachMessage: (p) => this._syncMessage(p, StudentConsumer.sync) });
-        await kafkaConsumer.addConsumer({ topics: ['moodle-classwork'] }, { eachMessage: (p) => this._syncMessage(p, ClassworkConsumer.sync) });
+        await kafkaConsumer.addConsumer({ topics: ['moodle-course-sync'] }, { eachMessage: (p) => this._syncMessage(p, CourseConsumer.sync) });
+        await kafkaConsumer.addConsumer({ topics: ['moodle-student-sync'] }, { eachMessage: (p) => this._syncMessage(p, StudentConsumer.sync) });
+        await kafkaConsumer.addConsumer({ topics: ['moodle-classwork-sync'] }, { eachMessage: (p) => this._syncMessage(p, ClassworkConsumer.sync) });
     }
 
     private async _syncMessage(payload: EachMessagePayload, consumer: Function) {
         console.log(payload.message.value);
         if (!payload.message.value) return;
-        
+
         return consumer(toJSON(payload.message.value));
     }
 }
