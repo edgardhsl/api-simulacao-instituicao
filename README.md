@@ -63,7 +63,7 @@ git clone https://github.com/edgardhsl/api-simulacao-instituicao.git
 npm install
 ```
 
-4. Configure os dados dos brokers do Apache Kafka no arquivo: `src/app/config/kafka_brokers.json`
+3. Configure os dados dos brokers do Apache Kafka no arquivo: `src/app/config/kafka_brokers.json`
 
 ```JS
 [
