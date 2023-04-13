@@ -27,10 +27,10 @@
 
 * [Sobre o projeto](#sobre-o-projeto)
 * [Primeiros passos](#primeiros-passos)
-  * [Pré-requisitos](#pre-requisitos)
-  * [Instalação](#instalacao)
-* [Uso da aplicação](#uso-da-aplicacao)
-* [Contribuição](#contribuicao)
+  * [Pré-requisitos](#pré-requisitos)
+  * [Instalação](#instalação)
+* [Uso da aplicação](#uso-da-aplicação)
+* [Contribuição](#contribuição)
 * [Autores](#autores)
 
 ## Sobre o projeto
