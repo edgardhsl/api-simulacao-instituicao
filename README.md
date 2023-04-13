@@ -80,7 +80,7 @@ npm install
 ]
 ```
 
-## Uso do aplicação
+## Uso da aplicação
 
 Você pode executar o projeto com o comando abaixo:
 `npm run dev`
