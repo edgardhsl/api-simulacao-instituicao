@@ -1,8 +1,6 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/edgardhsl/api-simulacao-instituicao">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  <h1 align="center">api-simulacao-instituicao</h1>
 
   <h3 align="center">Simulador de dados de Instituição Escolar</h3>
 
@@ -10,11 +8,7 @@
     Um simulador onde gera dados de cursos, disciplinas e atividades para serem inseridos no Apache Kafka
     <br/>
     <br/>
-    <a href="https://github.com/edgardhsl/api-simulacao-instituicao"><strong>Explore the docs »</strong></a>
     <br/>
-    <br/>
-    <a href="https://github.com/edgardhsl/api-simulacao-instituicao">View Demo</a>
-    .
     <a href="https://github.com/edgardhsl/api-simulacao-instituicao/issues">Report Bug</a>
     .
     <a href="https://github.com/edgardhsl/api-simulacao-instituicao/issues">Request Feature</a>
