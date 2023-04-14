@@ -1,27 +1,666 @@
 {
-  "courses": [
+  "curso": [
     {
-      "createdAt": "2022-11-10T21:57:04.348Z",
-      "name": "dsadsadsa",
-      "id": 1
-    }
-  ],
-  "students": [],
-  "enrolls": [],
-  "classworks": [
-    {
-      "createdAt": "2022-11-10T21:57:04.348Z",
-      "name": "dsadsadsa",
-      "id": "76f420a5-7071-4635-bde9-d6a7652b1bb4"
+      "id": 1,
+      "nome": "1º"
     },
     {
-      "createdAt": "2022-11-10T21:57:04.348Z",
-      "name": "dsadsadsa",
-      "id": "530f65cf-c546-4935-8fdf-705116802a4a"
+      "id": 2,
+      "nome": "2º"
+    },
+    {
+      "id": 3,
+      "nome": "3º"
+    },
+    {
+      "id": 4,
+      "nome": "4º"
+    },
+    {
+      "id": 5,
+      "nome": "5º"
+    },
+    {
+      "id": 6,
+      "nome": "6º"
+    },
+    {
+      "id": 7,
+      "nome": "7º"
+    },
+    {
+      "id": 8,
+      "nome": "8º"
+    },
+    {
+      "id": 9,
+      "nome": "9º"
+    },    
+    {
+      "id": 10,
+      "nome": "10º"
+    },
+    {
+      "id": 11,
+      "nome": "1º ano"
+    },
+    {
+      "id": 12,
+      "nome": "2º ano"
     },
     {
       "id": 13,
-      "name": "edgard"
+      "nome": "3º ano"
+    },
+    {
+      "id": 14,
+      "nome": "Ténico"
+    }
+  ],
+  "disciplina": [
+    {
+      "id": 1,
+      "nome": "Geografia",
+      "cursoId": 1
+    },
+    {
+      "id": 2,
+      "nome": "Língua Inglesa",
+      "cursoId": 1
+    },
+    {
+      "id": 3,
+      "nome": "Matemática",
+      "cursoId": 1
+    },
+    {
+      "id": 4,
+      "nome": "Geografia",
+      "cursoId": 2
+    },
+    {
+      "id": 5,
+      "nome": "Língua Inglesa",
+      "cursoId": 2
+    },
+    {
+      "id": 6,
+      "nome": "Matemática",
+      "cursoId": 2
+    },
+    {
+      "id": 7,
+      "nome": "Geografia",
+      "cursoId": 3
+    },
+    {
+      "id": 8,
+      "nome": "Língua Inglesa",
+      "cursoId": 3
+    },
+    {
+      "id": 9,
+      "nome": "Matemática",
+      "cursoId": 3
+    },
+    {
+      "id": 10,
+      "nome": "Geografia",
+      "cursoId": 4
+    },
+    {
+      "id": 11,
+      "nome": "Língua Inglesa",
+      "cursoId": 4
+    },
+    {
+      "id": 12,
+      "nome": "Matemática",
+      "cursoId": 4
+    },
+    {
+      "id": 13,
+      "nome": "Geografia",
+      "cursoId": 5
+    },
+    {
+      "id": 14,
+      "nome": "Língua Inglesa",
+      "cursoId": 5
+    },
+    {
+      "id": 15,
+      "nome": "Matemática",
+      "cursoId": 5
+    },
+    {
+      "id": 16,
+      "nome": "Geografia",
+      "cursoId": 6
+    },
+    {
+      "id": 17,
+      "nome": "Língua Inglesa",
+      "cursoId": 6
+    },
+    {
+      "id": 18,
+      "nome": "Matemática",
+      "cursoId": 6
+    },
+    {
+      "id": 19,
+      "nome": "Geografia",
+      "cursoId": 7
+    },
+    {
+      "id": 20,
+      "nome": "Língua Inglesa",
+      "cursoId": 7
+    },
+    {
+      "id": 21,
+      "nome": "Matemática",
+      "cursoId": 7
+    },
+    {
+      "id": 22,
+      "nome": "Geografia",
+      "cursoId": 8
+    },
+    {
+      "id": 23,
+      "nome": "Língua Inglesa",
+      "cursoId": 8
+    },
+    {
+      "id": 24,
+      "nome": "Matemática",
+      "cursoId": 8
+    },
+    {
+      "id": 25,
+      "nome": "Geografia",
+      "cursoId": 9
+    },
+    {
+      "id": 26,
+      "nome": "Língua Inglesa",
+      "cursoId": 9
+    },
+    {
+      "id": 27,
+      "nome": "Matemática",
+      "cursoId": 11
+    },
+    {      
+      "id": 28,
+      "nome": "Redação",
+      "cursoId": 13
+    }
+  ],
+  "atividade": [
+    {
+      "id": 1,
+      "titulo": "Identificar e relatar semelhanças e diferenças de usos do espaço públicopara o lazer e diferentes manifestações.",
+      "cursoId": 2,
+      "disciplinaId": 1,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 2,
+      "titulo": "Descrever características observadas de seus lugares de vivênciae identificar semelhanças e diferenças entre esses lugares.",
+      "cursoId": 1,
+      "disciplinaId": 1,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 3,
+      "titulo": "Discutir e elaborar, coletivamente, regras de convívio em diferentes espaços.",
+      "cursoId": 1,
+      "disciplinaId": 1,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 4,
+      "titulo": "Comparar comprimentos, capacidades ou massas, utilizando termos como mais alto, mais baixo, mais comprido, mais curto, mais grosso, mais fino, mais largo, mais pesado, mais leve, cabe mais, cabe menos, entre outros, para ordenar objetos de uso cotidiano.",
+      "cursoId": 1,
+      "disciplinaId": 3,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 5,
+      "titulo": "Resolver e elaborar problemas de adição e de subtração, envolvendo números de até dois algarismos, com os significados de juntar, acrescentar, separar e retirar, com o suporte de imagens e/ou material manipulável, utilizando estratégias e formas de registro pessoais.",
+      "cursoId": 1,
+      "disciplinaId": 3,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 6,
+      "titulo": "Descrever a localização de pessoas e de objetos no espaço segundo um dado ponto de referência, compreendendo que, para a utilização de termos que se referem à posição, como direita, esquerda, em cima, em baixo, é necessário explicitar-se o referencial.",
+      "cursoId": 1,
+      "disciplinaId": 3,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 7,
+      "titulo": "Comparar costumes e tradições de diferentes populações inseridas no bairro ou comunidade em que vive, reconhecendo a importância do respeito às diferenças.",
+      "cursoId": 2,
+      "disciplinaId": 4,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 8,
+      "titulo": "Identificar e elaborar diferentes formas de representaçãopara representar componentes da paisagem dos lugares de vivência.",
+      "cursoId": 2,
+      "disciplinaId": 4,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 9,
+      "titulo": "Analisar mudanças e permanências, comparando imagens de um mesmo lugar em diferentes tempos.",
+      "cursoId": 2,
+      "disciplinaId": 4,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 10,
+      "titulo": "Comparar quantidades de objetos de dois conjuntos, por estimativa e/ou por correspondência, para indicar “tem mais”, “tem menos” ou “tem a mesma quantidade”, indicando, quando for o caso, quantos a mais e quantos a menos.",
+      "cursoId": 2,
+      "disciplinaId": 6,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 11,
+      "titulo": "Estimar, medir e comparar capacidade e massa, utilizando estratégias pessoais e unidades de medida não padronizadas ou padronizadas.",
+      "cursoId": 2,
+      "disciplinaId": 6,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 12,
+      "titulo": "Reconhecer, nomear e comparar figuras geométricas espaciais, relacionando-as com objetos do mundo físico.",
+      "cursoId": 2,
+      "disciplinaId": 6,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 13,
+      "titulo": "Identificar alimentos, minerais e outros produtos cultivados e extraídos da natureza, comparando as atividades de trabalho em diferentes lugares.",
+      "cursoId": 3,
+      "disciplinaId": 7,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 14,
+      "titulo": "Identificar e interpretar imagens bidimensionais e tridimensionais em diferentes tipos de representação cartográfica.",
+      "cursoId": 3,
+      "disciplinaId": 7,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 15,
+      "titulo": "Investigar os usos dos recursos naturais, com destaque para os usos da água em atividades cotidianas, e discutir os problemas ambientais provocados por esses usos.",
+      "cursoId": 3,
+      "disciplinaId": 7,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 16,
+      "titulo": "Reconhecer que o resultado de uma medida depende da unidade de medida utilizada.",
+      "cursoId": 3,
+      "disciplinaId": 9,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 17,
+      "titulo": "Descrever e representar, por meio de esboços de trajetos ou utilizando croquis e maquetes, a movimentação de pessoas ou de objetos no espaço, incluindo mudanças de direção e sentido, com base em diferentes pontos de referência.",
+      "cursoId": 3,
+      "disciplinaId": 9,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 18,
+      "titulo": "Associar o quociente de uma divisão com resto zero de um número natural por 2, 3, 4, 5 e 10 às ideias de metade, terça, quarta, quinta e décima partes.",
+      "cursoId": 3,
+      "disciplinaId": 9,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 19,
+      "titulo": "Selecionar, em seus lugares de vivência e em suas histórias familiares e/ou da comunidade, elementos de distintas culturas, valorizando o que é próprio em cada uma delas e sua contribuição para a formação da cultura local, regional e brasileira.",
+      "cursoId": 4,
+      "disciplinaId": 10,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 20,
+      "titulo": "Utilizar as direções cardeais na localização de componentes físicos e humanos nas paisagens rurais e urbanas.",
+      "cursoId": 4,
+      "disciplinaId": 10,
+      "dataEntrega": "2022-11-29T02:45:13.313Z"
+    },
+    {
+      "id": 21,
+      "titulo": "Descrever e discutir o processo de produção, circulação e consumo de diferentes produtos.",
+      "cursoId": 4,
+      "disciplinaId": 10,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 22,
+      "titulo": "Reconhecer ângulos retos e não retos em figuras poligonais com o uso de dobraduras, esquadros ou softwares de geometria.",
+      "cursoId": 4,
+      "disciplinaId": 12,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 23,
+      "titulo": "Registrar as temperaturas máxima e mínima diárias, em locais do seu cotidiano, e elaborar gráficos de colunas com as variações diárias da temperatura, utilizando, inclusive, planilhas eletrônicas.",
+      "cursoId": 4,
+      "disciplinaId": 12,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 24,
+      "titulo": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração, utilizando estratégias diversas, como cálculo, cálculo mental e algoritmos, além de fazer estimativas do resultado.",
+      "cursoId": 4,
+      "disciplinaId": 12,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 25,
+      "titulo": "Identificar e comparar as mudanças dos tipos de trabalho e desenvolvimento tecnológico na agropecuária, na indústria, no comércio e nos serviços.",
+      "cursoId": 5,
+      "disciplinaId": 13,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 26,
+      "titulo": "Identificar diferenças étnico-raciais e étnico-culturais e desigualdades sociais entre grupos em diferentes territórios.",
+      "cursoId": 5,
+      "disciplinaId": 13,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 27,
+      "titulo": "Identificar órgãos do poder público e canais de participação social responsáveis por buscar soluções para a melhoria da qualidade de vidae discutir as propostas implementadas por esses órgãos que afetam a comunidade em que vive.",
+      "cursoId": 5,
+      "disciplinaId": 13,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 28,
+      "titulo": "Utilizar e compreender diferentes representações para a localização de objetos no plano, como mapas, células em planilhas eletrônicas e coordenadas geográficas, a fim de desenvolver as primeiras noções de coordenadas cartesianas.",
+      "cursoId": 5,
+      "disciplinaId": 15,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 29,
+      "titulo": "Interpretar, descrever e representar a localização ou movimentação de objetos no plano cartesiano, utilizando coordenadas cartesianas, indicando mudanças de direção e de sentido e giros.",
+      "cursoId": 5,
+      "disciplinaId": 15,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 30,
+      "titulo": "Associar as representações 10%, 25%, 50%, 75% e 100% respectivamente à décima parte, quarta parte, metade, três quartos e um inteiro, para calcular porcentagens, utilizando estratégias pessoais, cálculo mental e calculadora, em contextos de educação financeira, entre outros.",
+      "cursoId": 5,
+      "disciplinaId": 15,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 31,
+      "titulo": "Medir distâncias na superfície pelas escalas gráficas e numéricas dos mapas.",
+      "cursoId": 6,
+      "disciplinaId": 16,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 32,
+      "titulo": "Explicar as mudanças na interação humana com a natureza a partir do surgimento das cidades.",
+      "cursoId": 6,
+      "disciplinaId": 16,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 33,
+      "titulo": "Comparar modificações das paisagens nos lugares de vivência e os usos desses lugares em diferentes tempos.",
+      "cursoId": 6,
+      "disciplinaId": 16,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 34,
+      "titulo": "Pronúncia",
+      "cursoId": 6,
+      "disciplinaId": 17,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 35,
+      "titulo": "Presença da língua inglesa no cotidiano",
+      "cursoId": 6,
+      "disciplinaId": 17,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 36,
+      "titulo": "Produção de textos orais, com a mediação do professor",
+      "cursoId": 6,
+      "disciplinaId": 17,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 37,
+      "titulo": "Fazer estimativas de quantidades e aproximar números para múltiplos da potência de 10 mais próxima.",
+      "cursoId": 6,
+      "disciplinaId": 18,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 38,
+      "titulo": "Reconhecer que a relação de igualdade matemática não se altera ao adicionar, subtrair, multiplicar ou dividir os seus dois membros por um mesmo número e utilizar essa noção para determinar valores desconhecidos na resolução de problemas.",
+      "cursoId": 6,
+      "disciplinaId": 18,
+      "dataEntrega": "2022-11-29T02:45:13.314Z"
+    },
+    {
+      "id": 39,
+      "titulo": "Resolver e elaborar problemas que envolvam a partilha de uma quantidade em duas partes desiguais, envolvendo relações aditivas e multiplicativas, bem como a razão entre as partes e entre uma das partes e o todo.",
+      "cursoId": 6,
+      "disciplinaId": 18,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 40,
+      "titulo": "Analisar a influência dos fluxos econômicos e populacionais na formação socioeconômica e territorial do Brasil, compreendendo os conflitos e as tensões históricas e contemporâneas.",
+      "cursoId": 7,
+      "disciplinaId": 19,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 41,
+      "titulo": "Caracterizar dinâmicas dos componentes físico-naturais no território nacional, bem como sua distribuição e biodiversidade.",
+      "cursoId": 7,
+      "disciplinaId": 19,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 42,
+      "titulo": "Selecionar argumentos que reconheçam as territorialidades dos povos indígenas originários, das comunidades remanescentes de quilombos, de povos das florestas e do cerrado, de ribeirinhos e caiçaras, entre outros grupos sociais do campo e da cidade, como direitos legais dessas comunidades.",
+      "cursoId": 7,
+      "disciplinaId": 19,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 43,
+      "titulo": "Construção do sentido global do texto",
+      "cursoId": 7,
+      "disciplinaId": 20,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 44,
+      "titulo": "Variação linguística",
+      "cursoId": 7,
+      "disciplinaId": 20,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 45,
+      "titulo": "Práticas investigativas",
+      "cursoId": 7,
+      "disciplinaId": 20,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 46,
+      "titulo": "Descrever, por escrito e por meio de um fluxograma, um algoritmo para a construção de um triângulo qualquer, conhecidas as medidas dos três lados.",
+      "cursoId": 7,
+      "disciplinaId": 21,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 47,
+      "titulo": "Estabelecer o número ? como a razão entre a medida de uma circunferência e seu diâmetro, para compreender e resolver problemas, inclusive os de natureza histórica.",
+      "cursoId": 7,
+      "disciplinaId": 21,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 48,
+      "titulo": "Compreender e utilizar a multiplicação e a divisão de números racionais, a relação entre elas e suas propriedades operatórias.",
+      "cursoId": 7,
+      "disciplinaId": 21,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 49,
+      "titulo": "Analisar áreas de conflito e tensões nas regiões de fronteira do continente latino-americano e o papel de organismos internacionais e regionais de cooperação nesses cenários.",
+      "cursoId": 8,
+      "disciplinaId": 22,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 50,
+      "titulo": "Analisar a segregação socioespacial em ambientes urbanos da América Latina, com atenção especial ao estudo de favelas, alagados e zona de riscos.",
+      "cursoId": 8,
+      "disciplinaId": 22,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 51,
+      "titulo": "Analisar a influência do desenvolvimento científico e tecnológico na caracterização dos tipos de trabalho e na economia dos espaços urbanos e rurais da América e da África.",
+      "cursoId": 8,
+      "disciplinaId": 22,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 52,
+      "titulo": "Produção de textos escritos com mediação do professor/colegas",
+      "cursoId": 8,
+      "disciplinaId": 23,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 53,
+      "titulo": "Construção de repertório lexical",
+      "cursoId": 8,
+      "disciplinaId": 23,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 54,
+      "titulo": "Produção de textos orais com autonomia",
+      "cursoId": 8,
+      "disciplinaId": 23,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 55,
+      "titulo": "Resolver e elaborar problemas, envolvendo cálculo de porcentagens, incluindo o uso de tecnologias digitais.",
+      "cursoId": 8,
+      "disciplinaId": 24,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 56,
+      "titulo": "Resolver e elaborar problemas relacionados ao seu contexto próximo, que possam ser representados por sistemas de equações de 1º grau com duas incógnitas e interpretá-los, utilizando, inclusive, o plano cartesiano como recurso.",
+      "cursoId": 8,
+      "disciplinaId": 24,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 57,
+      "titulo": "Aplicar os conceitos de mediatriz e bissetriz como lugares geométricos na resolução de problemas.",
+      "cursoId": 8,
+      "disciplinaId": 24,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 58,
+      "titulo": "Analisar a importância da produção agropecuária na sociedade urbano-industrial ante o problema da desigualdade mundial de acesso aos recursos alimentares e à matéria-prima.",
+      "cursoId": 9,
+      "disciplinaId": 25,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 59,
+      "titulo": "Analisar os componentes físico-naturais da Eurásia e os determinantes histórico-geográficos de sua divisão em Europa e Ásia.",
+      "cursoId": 9,
+      "disciplinaId": 25,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 60,
+      "titulo": "Identificar e analisar as cadeias industriais e de inovação e as consequências dos usos de recursos naturais e das diferentes fontes de energiaem diferentes países.",
+      "cursoId": 9,
+      "disciplinaId": 25,
+      "dataEntrega": "2022-11-29T02:45:13.315Z"
+    },
+    {
+      "id": 61,
+      "titulo": "Escrita: construção da argumentação",
+      "cursoId": 9,
+      "disciplinaId": 26,
+      "dataEntrega": "2022-11-29T02:45:13.316Z"
+    },
+    {
+      "id": 62,
+      "titulo": "Conectores",
+      "cursoId": 9,
+      "disciplinaId": 26,
+      "dataEntrega": "2022-11-29T02:45:13.316Z"
+    },
+    {
+      "id": 63,
+      "titulo": "Verbos modais: should, must, have to, may e\nmight",
+      "cursoId": 9,
+      "disciplinaId": 26,
+      "dataEntrega": "2022-11-29T02:45:13.316Z"
+    },
+    {
+      "id": 64,
+      "titulo": "Resolver problemas por meio do estabelecimento de relações entre arcos, ângulos centrais e ângulos inscritos na circunferência, fazendo uso, inclusive, de softwares de geometria dinâmica.",
+      "cursoId": 9,
+      "disciplinaId": 27,
+      "dataEntrega": "2022-11-29T02:45:13.316Z"
+    },
+    {
+      "id": 65,
+      "titulo": "Reconhecer vistas ortogonais de figuras espaciais e aplicar esse conhecimento para desenhar objetos em perspectiva.",
+      "cursoId": 9,
+      "disciplinaId": 27,
+      "dataEntrega": "2022-11-29T02:45:13.316Z"
+    },
+    {
+      "id": 66,
+      "titulo": "Determinar o ponto médio de um segmento de reta e a distância entre dois pontos quaisquer, dadas as coordenadas desses pontos no plano cartesiano, sem o uso de fórmulas, e utilizar esse conhecimento para calcular, por exemplo, medidas de perímetros e áreas de figuras planas construídas no plano.",
+      "cursoId": 9,
+      "disciplinaId": 27,
+      "dataEntrega": "2022-11-29T02:45:13.316Z"
     }
   ]
 }

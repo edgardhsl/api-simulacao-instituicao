@@ -1,29 +1,31 @@
-import axios, { Axios, AxiosInstance } from "axios";
+import axios, { AxiosInstance } from "axios";
 
 export class KafkaLMSSync {
 
     private client: AxiosInstance;
 
-    constructor(private platform: Platform) {
+    constructor(platform: Platform) {
         this.client = axios.create({ baseURL: `http://localhost:2000/${platform}/` });
     }
 
     send(content: any) {
-        const json = typeof content === 'string' ? JSON.parse(content) : content;
+        const json = this.asJson(content);
         for (const topic in json) {
-            this.client.post(`/${this._castTopicTitle(topic)}`, json[topic]);
+            this.client.post(`/${this._getTopicEndpoint(topic)}`, json[topic]);
         }
     }
 
-    /**
-     * GAMBIARRA
-     */
-    private _castTopicTitle(key: string) {
+    private _getTopicEndpoint(key: string) {
         switch (key) {
             case 'disciplina': return Topic.Course;
             case 'curso': return Topic.Category;
             case 'atividade': return Topic.Classwork;
+            case 'estudante': return Topic.Student;
         }
+    }
+
+    private asJson(content: any) {
+        return typeof content === 'string' ? JSON.parse(content) : content
     }
 }
 
@@ -36,5 +38,6 @@ export enum Platform {
 export enum Topic {
     Course = 'course',
     Category = 'category',
-    Classwork = 'classwork'
+    Classwork = 'classwork',
+    Student = 'student'
 }
