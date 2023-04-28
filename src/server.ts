@@ -28,7 +28,7 @@ export class SchoolAPIServer extends Server {
         super.addControllers([new CourseController()]);
 
         this.runListeners();
-        this.runConsumers();
+        //this.runConsumers();
     }
 
     public start(port: number) {

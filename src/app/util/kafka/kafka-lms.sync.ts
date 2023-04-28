@@ -5,7 +5,7 @@ export class KafkaLMSSync {
     private client: AxiosInstance;
 
     constructor(platform: Platform) {
-        this.client = axios.create({ baseURL: `http://localhost:2000/${platform}/` });
+        this.client = axios.create({ baseURL: `http://localhost:2222/${platform}/` });
     }
 
     send(content: any) {

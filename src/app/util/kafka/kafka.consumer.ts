@@ -14,7 +14,7 @@ export class KafkaConsumer {
         });
 
         this.kafka = new Kafka({
-            clientId: 'my-app',
+            clientId: 'api-simulacao-producer',
             brokers: this._getBrokers,
         });
     }
