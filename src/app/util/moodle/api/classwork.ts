@@ -18,7 +18,6 @@ export class Classwork {
 
     public async update(classwork: any): Promise<Claswork2> {
         try {
-            console.log("teste");
             return await this.api.put(`classworks/${classwork.id}`, classwork).then(resp => resp.data);
         } catch (ex) {
             console.log(ex);

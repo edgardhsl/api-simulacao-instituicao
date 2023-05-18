@@ -20,7 +20,7 @@ export class KafkaLMSSync {
             case 'disciplina': return Topic.Course;
             case 'curso': return Topic.Category;
             case 'atividade': return Topic.Classwork;
-            case 'estudante': return Topic.Student;
+            case 'usuario': return Topic.Student;
         }
     }
 

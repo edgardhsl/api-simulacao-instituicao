@@ -1,4 +1,153 @@
 {
+  "usuarios": [
+    {
+      "id": 21,
+      "nome": "Edgard",
+      "sobrenome": "Lopes",
+      "login": "edgard",
+      "email": "diga.bento@gmail.com"
+    },
+    {
+      "id": 1,
+      "nome": "João",
+      "sobrenome": "Silva",
+      "login": "joao123",
+      "email": "joao@example.com"
+    },
+    {
+      "id": 2,
+      "nome": "Maria",
+      "sobrenome": "Souza",
+      "login": "maria456",
+      "email": "maria@example.com"
+    },
+    {
+      "id": 3,
+      "nome": "Pedro",
+      "sobrenome": "Ferreira",
+      "login": "pedro789",
+      "email": "pedro@example.com"
+    },
+    {
+      "id": 4,
+      "nome": "Ana",
+      "sobrenome": "Santos",
+      "login": "ana321",
+      "email": "ana@example.com"
+    },
+    {
+      "id": 5,
+      "nome": "Lucas",
+      "sobrenome": "Oliveira",
+      "login": "lucas654",
+      "email": "lucas@example.com"
+    },
+    {
+      "id": 6,
+      "nome": "Carolina",
+      "sobrenome": "Ribeiro",
+      "login": "carolina987",
+      "email": "carolina@example.com"
+    },
+    {
+      "id": 7,
+      "nome": "Rafael",
+      "sobrenome": "Almeida",
+      "login": "rafael123",
+      "email": "rafael@example.com"
+    },
+    {
+      "id": 8,
+      "nome": "Beatriz",
+      "sobrenome": "Gomes",
+      "login": "beatriz456",
+      "email": "beatriz@example.com"
+    },
+    {
+      "id": 9,
+      "nome": "Fernando",
+      "sobrenome": "Silveira",
+      "login": "fernando789",
+      "email": "fernando@example.com"
+    },
+    {
+      "id": 10,
+      "nome": "Mariana",
+      "sobrenome": "Martins",
+      "login": "mariana321",
+      "email": "mariana@example.com"
+    },
+    {
+      "id": 11,
+      "nome": "Gustavo",
+      "sobrenome": "Lima",
+      "login": "gustavo654",
+      "email": "gustavo@example.com"
+    },
+    {
+      "id": 12,
+      "nome": "Laura",
+      "sobrenome": "Barbosa",
+      "login": "laura987",
+      "email": "laura@example.com"
+    },
+    {
+      "id": 13,
+      "nome": "Roberto",
+      "sobrenome": "Andrade",
+      "login": "roberto123",
+      "email": "roberto@example.com"
+    },
+    {
+      "id": 14,
+      "nome": "Camila",
+      "sobrenome": "Pereira",
+      "login": "camila456",
+      "email": "camila@example.com"
+    },
+    {
+      "id": 15,
+      "nome": "José",
+      "sobrenome": "Nogueira",
+      "login": "jose789",
+      "email": "jose@example.com"
+    },
+    {
+      "id": 16,
+      "nome": "Amanda",
+      "sobrenome": "Fernandes",
+      "login": "amanda321",
+      "email": "amanda@example.com"
+    },
+    {
+      "id": 17,
+      "nome": "Ricardo",
+      "sobrenome": "Mendes",
+      "login": "ricardo654",
+      "email": "ricardo@example.com"
+    },
+    {
+      "id": 18,
+      "nome": "Isabela",
+      "sobrenome": "Lopes",
+      "login": "isabela987",
+      "email": "isabela@example.com"
+    },
+    {
+      "id": 19,
+      "nome": "Daniel",
+      "sobrenome": "Carvalho",
+      "login": "daniel123",
+      "email": "daniel@example.com"
+    },
+    {
+      "id": 20,
+      "nome": "Juliana",
+      "sobrenome": "Rocha",
+      "login": "juliana456",
+      "email": "juliana@example.com"
+    }
+  ],
   "curso": [
     {
       "id": 1,
@@ -35,7 +184,7 @@
     {
       "id": 9,
       "nome": "9º"
-    },    
+    },
     {
       "id": 10,
       "nome": "10º"
@@ -193,7 +342,7 @@
       "nome": "Matemática",
       "cursoId": 11
     },
-    {      
+    {
       "id": 28,
       "nome": "Redação",
       "cursoId": 13
