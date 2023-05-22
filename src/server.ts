@@ -37,7 +37,7 @@ export class SchoolAPIServer extends Server {
 
     public async runListeners() {
         const dbDir = __dirname + '/../db.json';
-        const syncronizer = new KafkaLMSSync(Platform.Moodle);
+        const syncronizer = new KafkaLMSSync(Platform.Classroom);
         fs.watchFile(dbDir, async () => syncronizer.send(await fs.readFileSync(dbDir).toString()));
     }
 
